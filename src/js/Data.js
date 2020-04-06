@@ -1,11 +1,11 @@
 export const exportArrays = () => {
         const objOfArrays = {
 
-    keycode :['Backquote', 'Digit1', 'Digit2', 'Digit3', 'Digit4', 'Digit5', 'Digit6', 'Digit7', 'Digit8', 'Digit9', 'Digit0', 'Minus', 'Equal', 'Backspace',
-                'Tab', 'KeyQ', 'KeyW', 'KeyE', 'KeyR', 'KeyT', 'KeyY', 'KeyU', 'KeyI', 'KeyO', 'KeyP', 'BracketLeft', 'BracketRight', 'Backslash', 'Delete',
-                'CapsLock', 'KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ', 'KeyK', 'KeyL', 'Semicolon', 'Quote', 'Enter',
-                'ShiftLeft', 'KeyZ', 'KeyX', 'KeyC', 'KeyV', 'KeyB', 'KeyN', 'KeyM', 'Comma', 'Period', 'Slash', 'ArrowUp', 'ShiftRight',
-                'ControlLeft', 'MetaLeft', 'AltLeft', 'Space', 'AltRight', 'ArrowLeft', 'ArrowDown', 'ArrowRight', 'ControlRight'
+    keycode: [ 192, 49, 50, 51, 52, 53, 54, 55, 56, 57, 48, 189, 187, 8,
+                9, 81, 87, 69, 82, 84, 89, 85, 73, 79, 80, 219, 221, 220, 46,
+                20, 65, 83, 68, 70, 71, 72, 74, 75, 76, 186, 222, 13,
+                16, 90, 88, 67, 86, 66, 78, 77, 188, 190, 191, 38, 16,
+                17, 91, 18, 32, 18, 37, 40, 39,17
             ],
 
     engKeys :['`', 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, '-', '=', 'Backspace',
@@ -51,11 +51,8 @@ export const exportArrays = () => {
                 'Ctrl', 'Win', 'Alt', 'Space', 'Alt', '◄', '▼', '►', 'Ctrl'
             ],
 
-    specialKeys: ['Backspace', 'Tab', 'CapsLock', 'Enter', 'ShiftLeft', 'ShiftRight', 'ControlLeft', 'Space', 'Delete',
-                'ControlLeft', 'MetaLeft', 'AltLeft', 'AltRight', 'ArrowLeft', 'ArrowDown', 'ArrowRight', 'ControlRight', 'ArrowUp'],
-
-    specialWidth: [143, 81, 128.5, 128, 142, 115, 78, 434],
-
+    specialKeys: [8, 9, 20, 13, 16, 16, 17, 32,],
+    specialWidth: [143, 81, 128.5, 128, 142, 142, 142, 115, 78, 50, 434],
     };
             return objOfArrays;
 };

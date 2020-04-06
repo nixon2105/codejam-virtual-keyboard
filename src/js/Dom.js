@@ -66,7 +66,6 @@ export const renderHTML = () => {
 
 
 const isEng = localStorage.getItem('isEng');
-
 export const renderKeyboad = () => {
     const languageKeyboard = isEng === 1 ? rusKeys : engKeys;
     let i = 0;
@@ -91,3 +90,12 @@ export const changeSizeSpecialKeys = () => {
         });
     })
 }
+
+// export const keydown = () => {
+//         keycode.forEach((el) => {
+//                 // const element = document.querySelectorAll('div[data="' + `${el}` + '"]');
+//                 document.addEventListener('keydown', e => {
+//                         e.classList.add('key__active')
+//                   });
+//         })
+// }

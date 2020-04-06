@@ -72,6 +72,15 @@ body {
   transition: all 0.2s ease;
 }
 
+.key:hover {
+  background: #748b99;
+}
+
+.key__active {
+  background: #748b99;
+  border-radius: 50%;
+}
+
 .special__key {
   background: rgb(94, 92, 92);
   background: linear-gradient(45deg, #433e3e 13%, #6e7074 54%, #3c3434 95%);

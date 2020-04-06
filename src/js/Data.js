@@ -51,7 +51,7 @@ export const exportArrays = () => {
                 'Ctrl', 'Win', 'Alt', 'Space', 'Alt', '◄', '▼', '►', 'Ctrl'
             ],
 
-    specialKeys: [8, 9, 20, 13, 16, 16, 17, 32,],
+    specialKeys: [8, 9, 20, 13, 16, 16, 17, 32, 46, 38, 18, 91, 91, 37, 40, 39],
     specialWidth: [143, 81, 128.5, 128, 142, 142, 142, 115, 78, 50, 434],
     };
             return objOfArrays;

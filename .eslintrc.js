@@ -16,6 +16,11 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
-      
+        "eqeqeq": 0,
+        "no-useless-concat" : 0,
+        "no-param-reassign" : 0,
+        "prefer-destructuring" : 0,
+        "no-const-assign": 0,
+        "no-unused-expressions": 0,
     }
 };

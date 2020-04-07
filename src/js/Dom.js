@@ -8,10 +8,6 @@ const {
     keycode,
     engKeys,
     rusKeys,
-    // engKeysUppercase,
-    // rusKeysUppercase,
-    // engKeysShift,
-    // rusKeysShift,
     specialKeys,
     specialWidth
 } = importedArrays;
@@ -65,13 +61,13 @@ export const renderHTML = () => {
 }
 
 
-const isEng = localStorage.getItem('isEng');
+const checklang = localStorage.getItem('checklang');
 export const renderKeyboad = () => {
-    const languageKeyboard = isEng === 1 ? rusKeys : engKeys;
+    const langKeys = checklang === 1 ? rusKeys : engKeys;
     let i = 0;
     let out = '';
     keycode.forEach((element) => {
-        out += `<div class="key" data=${element}>${languageKeyboard[i]}</div>`;
+        out += `<div class="key" data=${element}>${langKeys[i]}</div>`;
         i += 1;
     });
     document.querySelector('.keyboard__keys-box').innerHTML = out;
@@ -90,12 +86,3 @@ export const changeSizeSpecialKeys = () => {
         });
     })
 }
-
-// export const keydown = () => {
-//         keycode.forEach((el) => {
-//                 // const element = document.querySelectorAll('div[data="' + `${el}` + '"]');
-//                 document.addEventListener('keydown', e => {
-//                         e.classList.add('key__active')
-//                   });
-//         })
-// }

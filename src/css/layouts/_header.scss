@@ -1,0 +1,8 @@
+.header__title {
+  font-family: $font-primary;
+  text-align: center;
+  color: $color-header;
+  text-transform: uppercase;
+
+  @include font($size: 4.8rem, $weight: normal);;
+}

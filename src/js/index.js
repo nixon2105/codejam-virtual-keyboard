@@ -1,5 +1,5 @@
 import '../css/style.css';
-import '../css/style.scss';
+// import '../css/style.scss';
 import {
     renderHTML,
     renderKeyboad,
@@ -48,6 +48,9 @@ const {
         } else if (templateKey.innerText === 'Enter') {
         output += '\n';
 
+        } else if (templateKey.innerText === 'Delete') {
+           output += '\n';
+
         } else if (templateKey.innerText === '') {
         output += ' ';
 
@@ -76,9 +79,6 @@ const {
         
         } else if (event.code === "MetaLeft") {
             templateKey[0].classList.add('key__active');
-        
-        } else if (event.code === "MetaRight") {
-            templateKey[1].classList.add('key__active');
         
         } else if (event.code === "AltLeft") {
             templateKey[0].classList.add('key__active');
@@ -127,6 +127,9 @@ const {
 
         } else if (templateKey.innerText === 'Enter') {
             output += '\n';
+
+        } else if (templateKey.innerText === 'Delete') {
+             output += '\n';
 
         } else if (templateKey.innerText === '') {
             output += ' ';
@@ -208,9 +211,6 @@ const {
         } else if (event.code === "MetaLeft") {
             templateKey[0].classList.remove('key__active');
 
-        } else if (event.code === "MetaRight") {
-            templateKey[1].classList.remove('key__active');
-
         } else if (event.code === "AltLeft") {
             templateKey[0].classList.remove('key__active');
             
@@ -250,6 +250,3 @@ const {
     }
 
     handleKeyUp();
-
-
-    

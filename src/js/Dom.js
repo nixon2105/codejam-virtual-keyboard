@@ -14,7 +14,9 @@ const {
 } = importedArrays;
 
 
-const wrapper = document.querySelector('.wrapper');
+const container = document.createElement('div');
+document.body.append(container);
+container.classList.add('wrapper');
 
 const header = document.createElement('header');
 header.classList.add('header');
@@ -47,7 +49,7 @@ infoContent.innerHTML = 'The keyboard was created in the Windows operating syste
 
 
 export const renderHTML = () => {
-    wrapper.append(header, main);
+    container.append(header, main);
 
     header.append(title);
 

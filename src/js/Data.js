@@ -50,8 +50,11 @@ export const exportArrays = () => {
                 'Shift', 'Я', 'Ч', 'С', 'М', 'И', 'Т', 'Ь', 'Б', 'Ю', ',', '▲', 'Shift',
                 'Ctrl', 'Win', 'Alt', 'Space', 'Alt', '◄', '▼', '►', 'Ctrl'
             ],
-            specialKeys: [8, 9, 20, 13, 16, 17, 18, 32],
+    specialKeys: [8, 9, 20, 13, 16, 17, 18, 32],
+
     specialWidth: [143, 81, 128.5, 128, 142, 115, 78, 50, 50, 50, 434],
+
+    specialKeysColor: [8, 9, 20, 13, 16, 17, 18, 32, 46, 91, 38, 37, 40, 39],
     };
             return objOfArrays;
 };

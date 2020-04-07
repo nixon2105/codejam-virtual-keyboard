@@ -9,7 +9,8 @@ const {
     engKeys,
     rusKeys,
     specialKeys,
-    specialWidth
+    specialWidth,
+    specialKeysColor
 } = importedArrays;
 
 
@@ -83,6 +84,17 @@ export const changeSizeSpecialKeys = () => {
             e.classList.add('special__key');
             e.style.width = `${specialWidth[i]}px`;
             i += 1;
+        });
+    })
+}
+
+export const addColorspecialKeys = () => {
+  
+    specialKeysColor.forEach((el) => {
+        const element = document.querySelectorAll('div[data="' + `${el}` + '"]');
+        element.forEach((e) => {
+            e.classList.add('special__key-color');
+           
         });
     })
 }

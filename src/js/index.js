@@ -4,6 +4,7 @@ import {
     renderHTML,
     renderKeyboad,
     changeSizeSpecialKeys,
+    addColorspecialKeys
 
 } from './Dom';
 
@@ -25,10 +26,11 @@ const {
     renderHTML();
     renderKeyboad();
     changeSizeSpecialKeys();
-
+    addColorspecialKeys()
+    
+    let output = '';
     let leftShift;
     let capsLock;
-    let output = '';
     let checklang = Number(localStorage.getItem('checklang'));
     const keysKeyboard = document.querySelectorAll('.keyboard__keys-box div');
  
@@ -248,5 +250,6 @@ const {
     }
 
     handleKeyUp();
+
 
     
